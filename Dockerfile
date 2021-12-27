@@ -1,2 +1,4 @@
-FROM amazoncorretto:17
-RUN apt update && apt install git-core -y && apt clean
+FROM amazonlinux
+RUN yum install java-17-amazon-corretto -y
+RUN yum install git -y
+RUN yum update -y
